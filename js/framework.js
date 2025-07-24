@@ -1,3 +1,6 @@
+
+let GAME_STARTED = false;
+
 // The main game loop
 var main = function () {
 	var now = Date.now();
@@ -32,3 +35,5 @@ requestAnimationFrame =
 // Let's play this game!
 var then = Date.now();
 initGameState(main);
+
+

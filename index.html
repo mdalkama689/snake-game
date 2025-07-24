@@ -109,7 +109,7 @@
         }
       }
 
-      #restartBtn {
+      /* #restartBtn {
         position: absolute;
         bottom: -50px;
         left: 20px;
@@ -126,7 +126,27 @@
 
       #restartBtn:hover {
         background: #1d4ed8;
-      }
+      } */
+
+      #startBtn,
+#restartBtn {
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1001;
+}
+
+#startBtn:hover,
+#restartBtn:hover {
+  background: #1d4ed8;
+}
     </style>
   </head>
   <body>
@@ -136,8 +156,9 @@
 
     <div style="position: relative">
       <canvas id="canvas" height="480" width="512"></canvas>
-
-      <button id="restartBtn">Restart Game</button>
+<button id="startBtn">Start Game</button>
+<button id="restartBtn" style="display: none;">Restart Game</button>
+      <!-- <button id="restartBtn">Restart Game</button> -->
     </div>
 
     <div class="share-container">
@@ -219,5 +240,6 @@
     <script src="js/utils.js"></script>
     <script src="js/draw.js"></script>
     <script src="js/framework.js"></script>
+        <script src="js/start.js"></script>
   </body>
 </html>

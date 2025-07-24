@@ -1,8 +1,15 @@
 var BLOCK_SIZE = 16;
 
+// function update() {
+//   if (GAME_STATE.complete) GAME_STATE.snake.update();
+// }
+
 function update() {
-  if (GAME_STATE.complete) GAME_STATE.snake.update();
+  if (GAME_STARTED && GAME_STATE.complete) {
+    GAME_STATE.snake.update();
+  }
 }
+
 
 function initGameState(callback) {
   GAME_STATE.grid = {};
